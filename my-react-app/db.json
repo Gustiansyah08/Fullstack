@@ -1,0 +1,30 @@
+{
+  "route1": [
+    {
+      "success": true,
+      "message": "route1",
+      "data": [],
+      "id": "5582"
+    }
+  ],
+  "route2": [
+    {
+      "success": true,
+      "message": "route2",
+      "data": [],
+      "id": "3bfc"
+    }
+  ],
+  "products": [
+    {
+      "title": "Product 1",
+      "price": "10000",
+      "id": "1"
+    },
+    {
+      "title": "Product 2",
+      "price": "20000",
+      "id": "2"
+    }
+  ]
+}
