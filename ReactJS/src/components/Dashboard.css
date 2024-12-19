@@ -1,0 +1,253 @@
+/* Dashboard Container */
+.dashboard-container {
+  font-family: 'Patrick Hand', cursive;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: auto;
+  max-height: 95vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #000;
+}
+
+/* Header Section */
+.dashboard-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-button {
+  background: #ff5a5f;
+  border: 3px solid #000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.logout-button:hover {
+  background: #e04e50;
+}
+
+/* Menu Items (User Dashboard and User Management) */
+.dashboard-header .menu-items {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.dashboard-header .menu-items a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.dashboard-header .menu-items a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.dashboard-main {
+  padding: 20px;
+  margin-top: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.dashboard-main h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff5a5f;
+}
+
+.judul {
+  font-family: 'Patrick Hand';
+}
+
+/* User Table */
+.user-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 10px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 1000px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #000;
+  word-wrap: break-word;
+  max-width: 200px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.user-table th {
+  background: #ff5a5f;
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.user-table tr:hover {
+  background: #d6e4ff;
+}
+
+/* Action Buttons */
+.edit-button,
+.delete-button {
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-button {
+  background: #28a745;
+}
+
+.edit-button:hover {
+  background: #218838;
+}
+
+.delete-button {
+  background: #dc3545;
+}
+
+.delete-button:hover {
+  background: #c82333;
+}
+
+/* Search Section */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  width: 200px;
+  max-width: 100%;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.search-button {
+  background: #ff5a5f; /* Warna dasar sama dengan Add dan Clear */
+  color: white;
+  padding: 8px 20px; /* Padding horizontal diperpanjang */
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 14px;
+  border: 3px solid #000;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+  background: #e04e50; /* Hover sama dengan Add User dan Clear */
+  transform: scale(1.05); /* Efek hover */
+}
+
+
+.clear-button {
+  background: #ff5a5f; /* Sama seperti tombol Add dan Search */
+  color: white;
+  padding: 8px 20px; /* Padding diperpanjang agar lebih proporsional */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 3px solid #000;
+  font-family: 'Patrick Hand', cursive;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.clear-button:hover {
+  background: #e04e50; /* Hover sama dengan Add User dan Search */
+  transform: scale(1.05); /* Efek hover */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .logout-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .dashboard-main {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .user-table-wrapper {
+    margin-bottom: 10px;
+  }
+}

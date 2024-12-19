@@ -1,0 +1,168 @@
+/* Register.css */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Font tulisan tangan */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(135deg, #ff5a5f, #4facfe); /* Gradien sesuai dengan tema dashboard */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 900px; /* Membatasi lebar maksimum */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar elemen form */
+}
+
+.register-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(90deg, #ff5a5f, #4facfe); /* Gradien warna */
+  -webkit-background-clip: text; /* Klip ke teks */
+  -webkit-text-fill-color: transparent; /* Transparansi untuk melihat gradien */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek dramatis */
+}
+
+/* Form grup dengan dua kolom berdampingan */
+.register-form-group {
+  display: flex;
+  justify-content: space-between; /* Spasi antar elemen */
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.register-form-group label {
+  width: 48%; /* Lebar label */
+  font-weight: bold;
+  font-size: 1em;
+  color: #555;
+}
+
+.register-form-group input,
+.register-form-group select {
+  width: 48%; /* Lebar input setengah dari kolom */
+  padding: 12px;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1em;
+  background: #fff;
+  transition: border 0.3s ease;
+}
+
+.register-form-group input:hover,
+.register-form-group select:hover {
+  border: 3px dashed #000; /* Garis putus-putus saat hover */
+}
+
+.register-form-group input:focus,
+.register-form-group select:focus {
+  border: 3px dashed #000;
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 15px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5a5f;
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Patrick Hand', cursive;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover {
+  background: #e04e50;
+  transform: translateY(-2px);
+}
+
+.register-back-redirect {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-back-button {
+  background: #007bff;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-back-button:hover {
+  background: #0056b3;
+}
+
+.register-back-redirect p {
+  color: #6c757d;
+  font-size: 0.9em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+@media (max-width: 768px) {
+  /* Pada perangkat kecil, form akan menempati lebar penuh dan elemen akan ditata ulang */
+  .register-form-group {
+    flex-direction: column; /* Elemen form menjadi kolom */
+    width: 100%;
+    gap: 10px;
+  }
+
+  .register-form-group label,
+  .register-form-group input,
+  .register-form-group select {
+    width: 100%; /* Semua form akan mengisi lebar penuh */
+  }
+
+  .register-card {
+    width: 90%; /* Lebar form menjadi lebih kecil di layar kecil */
+  }
+}

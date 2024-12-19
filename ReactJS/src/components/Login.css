@@ -1,0 +1,160 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Font tulisan tangan */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(135deg, #ff5a5f, #4facfe); /* Gradien sesuai dengan tema dashboard */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  width: 400px;
+  background-image: url('https://www.svgrepo.com/show/17840/hand-drawn-frame.svg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ff5a5f; /* Border dengan warna senada */
+}
+
+/* Styling untuk header */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(90deg, #ff5a5f, #4facfe); /* Gradien warna */
+  -webkit-background-clip: text; /* Klip ke teks */
+  -webkit-text-fill-color: transparent; /* Transparansi untuk melihat gradien */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek dramatis */
+}
+
+/* Styling untuk input form */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid transparent; /* Default tanpa border */
+  border-radius: 8px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1em;
+  background: #fff;
+  transition: border 0.3s ease; /* Animasi untuk border */
+}
+
+.input-group input:hover {
+  border: 3px dashed #000; /* Garis putus-putus saat hover */
+}
+
+.input-group input:focus {
+  border: 3px dashed #000; /* Border tetap saat input aktif */
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-actions a {
+  color: #007bff;
+  text-decoration: none;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.login-actions a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5a5f;
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Patrick Hand', cursive;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background: #e04e50;
+  transform: translateY(-2px);
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.register-button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Patrick Hand', cursive;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background: #218838;
+}
+
+.register-link p {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    width: 100%;
+    padding: 15px;
+  }
+}

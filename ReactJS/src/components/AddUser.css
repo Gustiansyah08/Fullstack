@@ -1,0 +1,146 @@
+/* Add User Container */
+.add-user-container {
+    font-family: 'Patrick Hand', cursive;
+    color: #333;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000;
+    width: 100%;
+    max-width: 800px; /* Memperbesar lebar form */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Add User Header */
+  .add-user-header {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Patrick Hand', cursive;
+    color: #ff5a5f;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Section */
+  .add-user-form {
+    display: flex;
+    flex-wrap: wrap; /* Membuat elemen form berada dalam satu baris */
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 48%; /* Lebar elemen form sekitar 48% agar ada space di antara elemen */
+    min-width: 250px; /* Membatasi lebar minimum */
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    font-family: 'Patrick Hand', cursive;
+    width: 100%; /* Agar input dan select memenuhi lebar container */
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Patrick Hand', cursive;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #e04e50;
+    transform: scale(1.05);
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+    /* CSS untuk tombol Add User */
+    .add-user-button {
+        background: #ff5a5f; /* Warna dasar tombol */
+        color: white;
+        padding: 8px 20px; /* Padding horizontal diperpanjang */
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Patrick Hand', cursive; /* Gaya font seperti tombol Search */
+        font-size: 14px;
+        border: 3px solid #000;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      
+      /* Efek hover tombol Add User */
+      .add-user-button:hover {
+        background: #e04e50; /* Warna saat hover */
+        transform: scale(1.05); /* Efek zoom in */
+      }
+      
+      /* Menambahkan efek disabled */
+      .add-user-button:disabled {
+        background: #ccc; /* Warna saat tombol dinonaktifkan */
+        cursor: not-allowed;
+        border: 3px solid #aaa;
+      }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .add-user-container {
+      padding: 15px;
+      width: 100%;
+    }
+  
+    .add-user-header {
+      font-size: 20px;
+    }
+  
+    .form-group {
+      flex: 1 1 100%; /* Full width pada layar kecil */
+    }
+  
+    .form-group label {
+      font-size: 12px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
